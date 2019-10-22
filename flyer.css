@@ -1,16 +1,30 @@
-/* img {
-    -webkit-filter: grayscale(100%) contrast(110%) blur(1px); Chrome, Safari, Opera
-/*     filter: grayscale(100%); */
+
+body{
+  background-image: url('back.jpg');
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+html {
+  width: 100%;
+}
+table {
+  margin: 0 auto;
+}
+td{
+  color: white;
+}
 
 #flyer {
+    margin: 0 auto;
     background-image:  url('Flyer.jpeg');
     height: 450px;
     width: 450px;
     background-size: cover;
     line-height: 300px;
     text-align:center
-  }
-  #flyerText {
+}
+#flyerText {
     position: relative;
     top: 36px;
     color: #253D6B;
@@ -18,4 +32,4 @@
     text-transform: uppercase;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight: bold
-  }
+}

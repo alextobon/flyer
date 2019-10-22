@@ -1,14 +1,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script src="html2canvas.js" ></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" media="all" href="flyer.css">
 
-<h1>Prueba Flyer</h1>
-
-Ingrese nombre <input type="text" id="name" placeholder="here" value="Luisa" maxlength="16">
-<button id="download">Descargar</button>
+<h1>Alex Tobon</h1>
+<h4>Suma tu apoyo y acompáñanos votando por la propuesta del pueblo #LaCejaNosUne</h4>
 <hr>
-
+<table class="table" style="width: auto;">
+  <tr>
+    <td>
+      Ingresa tu nombre &nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+      <input type="text" class="input" id="name" placeholder="here" value="Luisa" maxlength="16">
+      &nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+      <button id="download" class="btn btn-sm btn-primary">Descargar</button>
+    </td>
+  </tr>
+</table>
 <div id="flyer" >
   <p id="flyerText">Luisa</p>
 </div>
