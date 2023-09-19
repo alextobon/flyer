@@ -4,7 +4,9 @@ $("#name").keyup(function(){
 });
   
 document.getElementById("download").addEventListener("click", function() {
-  html2canvas(document.querySelector('#flyer')).then(function(canvas) {
+  html2canvas(document.querySelector('#flyer'), {
+    scale: 2
+  }).then(function(canvas) {
     saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.png');
   });
 });
