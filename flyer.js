@@ -5,17 +5,15 @@ $("#name").keyup(function(){
   
 document.getElementById("download").addEventListener("click", function() {
   html2canvas(document.querySelector('#flyer'), {
-    scale: 4,
-    allowTaint: true,
-    foreignObjectRendering: true
+    scale: 4
   }).then(function(canvas) {
-    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-      saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.heic');
-      console.log("This is an iOS device.");
-    } else {
-        console.log("This is not an iOS device!");
+     //if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      //saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.heic');
+      //console.log("This is an iOS device.");
+    //} else {
+        //console.log("This is not an iOS device!");
         saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.jpg');
-    }
+    //}
   });
 });
 

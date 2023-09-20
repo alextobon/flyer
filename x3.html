@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan David Torres Baena</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #0788b2;
+            color: #fff;
+            padding: 2px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .input-field {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .submit-button {
+            display: inline-block;
+            background-color: #0788b2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #c0392b;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .responsive-image {
+            position: relative;
+            top: -80px;
+            height: 450px;
+            width: 450px;
+            text-align:center
+        }
+        #flyerText {
+            position: relative;
+            top: 110px;
+            color: #ffffff;
+            font-size: 29px;
+            text-transform: capitalize;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+            font-weight: bold;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Juan David Torres Baena - Acciones para crecer
+            <br> Tola primero la gente  #10
+        </h2>
+    </div> <br>
+    <div class="form-container">
+
+            <input type="text" class="input-field" id="name" placeholder="here" value="Luisa" maxlength="16">
+
+            <button id="download" class="submit-button">Descargar</button>
+        </form>
+    </div>
+    <div id="flyer"  class="image-container">
+        
+        <p id="flyerText">Luisa</p>
+        <img src="flyer1.jpeg" alt="Juan David Torres Baena" class="responsive-image">
+    </div>
+
+<script src="flyer.js" ></script>
+</body>
+</html>
