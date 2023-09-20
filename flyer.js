@@ -9,7 +9,7 @@ document.getElementById("download").addEventListener("click", function() {
     allowTaint: true,
     foreignObjectRendering: true
   }).then(function(canvas) {
-    saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.jpg');
+    saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.heic');
   });
 });
 
