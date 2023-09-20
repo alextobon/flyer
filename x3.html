@@ -9,7 +9,7 @@
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             text-align: center;
@@ -18,7 +18,7 @@
         .header {
             background-color: #0788b2;
             color: #fff;
-            padding: 2px;
+            padding: 20px;
         }
 
         .subtitle {
@@ -33,16 +33,18 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
 
         .input-field {
+            display: inline-block;
             width: 60%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            display: inline-block;
         }
 
         .submit-button {
@@ -56,23 +58,29 @@
         }
 
         .submit-button:hover {
-            background-color: #c0392b;
+            background-color: #0788b2;
         }
 
         .image-container {
             margin-top: 20px;
+            display: inline-block;
+        }
+
+        .image-wrapper {
+            display: inline-block;
+            height: 450px;
         }
 
         .responsive-image {
             position: relative;
-            top: -80px;
+            top: -96px;
             height: 450px;
             width: 450px;
             text-align:center
         }
         #flyerText {
             position: relative;
-            top: 110px;
+            top: 92px;
             color: #ffffff;
             font-size: 29px;
             text-transform: capitalize;
@@ -97,10 +105,12 @@
     </div>
     <div  class="image-container">
         
-        <p id="flyerText">Luisa</p>
-        <img  id="flyer"  src="flyer1.jpeg" alt="Juan David Torres Baena" class="responsive-image">
+        <div id="flyer" class="image-wrapper">
+            <p id="flyerText">Luisa</p>
+            <img src="flyer1.jpeg" alt="Juan David Torres Baena" class="responsive-image">
+    
+        </div>
     </div>
-
 <script src="flyer.js" ></script>
 </body>
 </html>
