@@ -5,7 +5,7 @@ $("#name").keyup(function(){
   
 document.getElementById("download").addEventListener("click", function() {
   html2canvas(document.querySelector('#flyer'), {
-    scale: 2
+    scale: 4
   }).then(function(canvas) {
     saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.png');
   });

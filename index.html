@@ -12,24 +12,33 @@
 
 <style>
 #flyer {
-    zoom: 0.5;
     margin: 0 auto;
-    background-image:  url('flyer1.jpeg');
-    height: 900px;
-    width: 900px;
+    height: 450px;
+    width: 450px;
     background-size: cover;
     line-height: 300px;
     text-align:center
 }
 
+#flyerImg {
+    position: relative;
+    top: -320px;
+    margin: 0 auto;
+    height: 450px;
+    width: 450px;
+    text-align:center
+}
+
+
 #flyerText {
     position: relative;
-    top: 120px;
+    top: -11px;
     color: #ffffff;
-    font-size: 70px;
+    font-size: 32px;
     text-transform: capitalize;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-weight: bold
+    font-weight: bold;
+    z-index: 100;
 }
 </style>
 
@@ -52,6 +61,7 @@
 </table>
 <div id="flyer" >
   <p id="flyerText">Luisa</p>
+  <img id="flyerImg" src="flyer1.jpeg"/>
 </div>
 
 <script src="flyer.js" ></script>
