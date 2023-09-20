@@ -5,9 +5,11 @@ $("#name").keyup(function(){
   
 document.getElementById("download").addEventListener("click", function() {
   html2canvas(document.querySelector('#flyer'), {
-    scale: 4
+    scale: 4,
+    allowTaint: true,
+    foreignObjectRendering: true
   }).then(function(canvas) {
-    saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.png');
+    saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.jpg');
   });
 });
 
