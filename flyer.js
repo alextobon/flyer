@@ -9,7 +9,13 @@ document.getElementById("download").addEventListener("click", function() {
     allowTaint: true,
     foreignObjectRendering: true
   }).then(function(canvas) {
-    saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.heic');
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+      saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.heic');
+      console.log("This is an iOS device.");
+    } else {
+        console.log("This is not an iOS device!");
+        saveAs(canvas.toDataURL(), 'Apoyo-de-' + $("#name").val() +'.jpg');
+    }
   });
 });
 
