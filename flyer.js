@@ -4,6 +4,8 @@ $("#name").keyup(function(){
 });
   
 document.getElementById("download").addEventListener("click", function() {
+alert("Click on descargar")
+
   html2canvas(document.querySelector('#flyer'), {
     scale: 4
   }).then(function(canvas) {
