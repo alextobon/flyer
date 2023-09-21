@@ -9,6 +9,13 @@ document.getElementById("b2").addEventListener("click", function() {
 
 $( "#b3" ).on( "click", function() {
   alert( "b3" );
+
+    var node = document.getElementById('flyer');
+    
+    domtoimage.toBlob(node).then(function (blob) {
+        saveAs(blob, 'Apoyo-de-' + $("#name").val() +'.jpg');
+    });
+
 } );
 
 document.getElementById("download").addEventListener("click", function() {
