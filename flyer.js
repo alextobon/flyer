@@ -3,6 +3,14 @@ $("#name").keyup(function(){
     $("#flyerText").html($(this).val());
 });
   
+document.getElementById("b2").addEventListener("click", function() {
+  alert("Click on b2")
+});
+
+$( "#b3" ).on( "click", function() {
+  alert( "b3" );
+} );
+
 document.getElementById("download").addEventListener("click", function() {
 alert("Click on descargar")
 
